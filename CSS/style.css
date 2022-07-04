@@ -1,4 +1,49 @@
 body{
-    background-color:darkblue;
-    color:aliceblue;
+    background-color:#0E1E47;
+    margin: 0px;
+    color:#ffffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.paleta{
+    color:#0E1E47;
+    color:#82A5FF;
+    color: #5E84E6;
+    color: #997620;
+    color: #E6BE5E;
+}
+/*Elementos de cabecera*/
+.nav{
+    border: 1px solid white;
+    margin: 0px;
+    padding: 0px;
+    grid-template-columns: auto auto;
+}
+
+.nombre{
+    width: 40%;
+}
+
+.titulo{
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.subtitulo{
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+/*Elementos cabecera-navegación*/
+a{
+    color:white;
+    text-decoration: none;
+}
+
+.lista-elementos{
+    border: #E6BE5E solid 1px;
+    list-style-type: none;
+
+}
+
