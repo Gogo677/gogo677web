@@ -5,24 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gogo677 web</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <!--Cabecera-->
-    <section>
-        <nav class="nav">
-            <div class="nombre">
-                <h1 class="titulo"> Diego Jiménez González </h1>
-                <p class="subtitulo"><small>Software developer</small></p>
+    <!--Cabecera navegacion-->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <div class="nombre">
+                    <h2>Diego Jiménez González</h2>
+                    <p><small>Software developer</small></p>
+                </div>
+                <nav class="menu" aria-label="main-navigation">
+                    <ul>
+                        <li>
+                            <a class="is-active" href="#main">Hola</a>
+                        </li>
+                        <li>
+                            <a href="#project">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="elementos-nav">
-                <ul class="lista-elementos">
-                    <li class="elemento"><a href="#">Inicio</a></li>
-                    <li class="elemento"><a href="#">Contacto</a></li>
-                </ul>
+        </div>
+    </header>
+    <div class="wrapper">
+        <section aria-label="main" class="hero" id="main">
+            <div class="hero-image">
+                <img src="./img/diegopicportfolio.jpg" width="328" height="330" alt="Foto de Diego Jiménez">
             </div>
+            <div class="hero-description">
+                <h1>
+                    <span>Hola a todos!</span>
+                    <span>Soy Diego</span>
+                </h1>
+                <p>
+                    Software developer apasionado por la tecnología buscando siempre mejorar sus habilidades y aprendiendo nuevas con el fin de implementar las mejores soluciones a los problemas presentados.
+                </p>
+                <p>
+                    Mis principales áreas de interés son el desarrollo web y la ciencia de datos.
+                </p>
+                <div class="social">
+                    <a class="button-icon" href="tel:5535543897"><img src="./icons/icon-phone.png"></a>
+                    <a class="button-icon" href="mailto:diegogo_go@hotmail.com"><img src="./icons/icon-important_mail.png"></a>
+                    <a target="_blank" class="button-icon" href="https://www.linkedin.com/in/gogo677/"><img src="./icons/icon-Linkedin24x24purple.png"></a>
+                </div>
+            </div>
+        </section>
 
-        </nav>
-    </section>
+        <div class="working-area" style="text-align: center;">
+            <h2 style="font: var(--headline3);">Pagina en desarrollo!</h2>
+            <img src="./img/trabajando.png" alt="" height="300">        
+        </div>
+
+    </div>
 </body>
 </html>
