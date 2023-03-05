@@ -3,6 +3,8 @@
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 26px;
     place-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .project-card{
@@ -16,12 +18,46 @@
     object-fit: cover;
 }
 
+.project-card:hover {
+    scale: 105%;
+}
+
+.project-card a{
+   display: inline-block;
+   margin-bottom: 8px;
+}
+
+.project-name {
+    font-weight: bold;
+    font-size:larger;
+}
+
+.project-info{
+    margin-bottom: 20px;
+}
+
+.project-info span{
+    display: block;
+}
+
+.project-info span:first-child {
+    font-size: small;
+    text-decoration:underline;
+}
+
+.project-info span:nth-child(2) {
+    font-size: small;
+}
+
+
+/*
 .project-info{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
-}
+}*/
+
 
 @media(max-width: 640px){
     .projects-cards-container {
