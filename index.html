@@ -22,10 +22,10 @@
                 <nav class="menu" aria-label="main-navigation">
                     <ul>
                         <li>
-                            <a class="is-active" href="#main">Hola</a>
+                            <a class="is-active" href="#main">Inicio</a>
                         </li>
                         <li>
-                            <a href="#project">Proyectos</a>
+                            <a href="#projects">Proyectos</a>
                         </li>
                         <li>
                             <a href="#contact">Contacto</a>
@@ -41,29 +41,133 @@
                 <img src="./img/diego20234x4.png" width="328" height="330" alt="Foto de Diego Jiménez">
             </div>
             <div class="hero-description">
-                <h1>
+                <h2>
                     <span>Hola a todos!</span>
                     <span>Soy Diego</span>
-                </h1>
+                </h2>
                 <p>
-                    Software developer apasionado por la tecnología buscando siempre mejorar sus habilidades y aprendiendo nuevas con el fin de implementar las mejores soluciones a los problemas presentados.
+                    Software developer apasionado por la tecnología buscando siempre mejorar sus habilidades
+                     y aprendiendo nuevas con el fin de implementar las mejores soluciones a los problemas presentados.
                 </p>
                 <p>
-                    Mis principales áreas de interés son el desarrollo web y la ciencia de datos.
+                    Mis principales áreas de interés son el desarrollo de aplicaciones y la ciencia de datos
                 </p>
                 <div class="social">
-                    <a class="button-icon" href="tel:5535543897"><img src="./icons/icon-phone.png"></a>
                     <a class="button-icon" href="mailto:diegogo_go@hotmail.com"><img src="./icons/icon-important_mail.png"></a>
                     <a target="_blank" class="button-icon" href="https://www.linkedin.com/in/gogo677/"><img src="./icons/icon-Linkedin24x24purple.png"></a>
+                    <a target="_blank" class="button-icon" href="https://github.com/Gogo677"><img src="./icons/icon-github.png"></a>
                 </div>
             </div>
         </section>
 
-        <div class="working-area" style="text-align: center;">
+        <!--<div class="working-area" style="text-align: center;">
             <h2 style="font: var(--headline3);">Página en desarrollo!</h2>
             <img src="./img/trabajando.png" alt="" height="300">        
+        </div>-->
+
+        <div class="container">
+            <h3>Tecnologias</h3>
+            <div class="tech-container">
+                <div class="tech-card">
+                    <img src="./tech-icons/python.svg" alt="">
+                    <p>Python</p>
+                </div>
+                <div class="tech-card">
+                    <img src="./tech-icons/flask-png.png" alt="">
+                    <p>Flask</p>
+                </div>
+                <div class="tech-card">
+                    <img src="./tech-icons/django-icon.svg" alt="">
+                    <p>Django</p>
+                </div>
+                <div class="tech-card">
+                    <img src="./tech-icons/html.svg" alt="">
+                    <p>HTML</p>
+                </div>
+                <div class="tech-card">
+                    <img src="./tech-icons/css.svg" alt="">
+                    <p>CSS</p>
+                </div>
+                <div class="tech-card">
+                    <img src="./tech-icons/Javascript.svg" alt="">
+                    <p>JavaScript</p>
+                </div>
+                
+                <div class="tech-card">
+                    <img src="./tech-icons/react.svg" alt="">
+                    <p>React</p>
+                </div>
+                <div class="tech-card">
+                    <img src="./tech-icons/nodejs-square.svg" alt="">
+                    <p>Nodejs</p>
+                </div> 
+                <div class="tech-card">
+                    <img src="./tech-icons/sql.svg" alt="">
+                    <p>SQL</p>
+                </div>
+                <div class="tech-card">
+                    <img src="./tech-icons/java.svg" alt="">
+                    <p>Java</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-container container" id="projects">
+            <h3>Mis proyectos</h3>
+            <div class="projects-cards-container">
+                <div class="project-card">
+                    <img src="" alt="">
+                    <h3>Ejemplo projecto</h3>
+                    <div class="project-info">
+                        <p>Descripción del proyecto</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="contact-container container" id="contact">
+            <h3>Contacto</h3>
+            <p>Comunicate conmigo</p>
+            <form action="" class ="contact-form" id="form">
+                <div class="form-info">
+                    <div class="form-item">
+                        <label for="nombre">Nombre </label>
+                        <input type="text" class="input" id="nombre" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-item">
+                        <label for="correo">Correo</label>
+                        <input type="email" class="input" name="correo" id="correo" placeholder="ejemplo@gmail.com">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="asunto">Asunto</label>
+                    <input  class="input" type="text" name ="asunto" id="asunto" placeholder="Me gustaría contactarte">
+                </div>
+                <div class="form-item">
+                    <label for="descripcion">Descripción</label>
+                    <textarea class="input description" name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción"></textarea>
+                </div>
+                <input class="button" type="submit" value="Enviar">
+            </form>
+            <a href="" id="mailto"></a>
         </div>
 
     </div>
+
+    <script>
+        const $form = document.querySelector('#form');
+        const $mailto = document.querySelector('#mailto');
+
+        $form.addEventListener('submit',handleSubmit);
+
+        function handleSubmit(event){
+            event.preventDefault();
+            const form = new FormData(this);
+            $mailto.setAttribute('href',`mailto:diegogo_go@hotmail.com?subject=${form.get('nombre')} - ${form.get('asunto')}&body=${form.get('descripcion')}`);
+            $mailto.click();
+        }
+    </script>
 </body>
 </html>

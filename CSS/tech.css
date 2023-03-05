@@ -1,0 +1,47 @@
+.tech-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 16px;
+    place-content: center;
+    text-align: center;   
+    align-items: center;
+}
+
+.tech-card{
+    width: 140px;
+    text-align: center;
+}
+
+.tech-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.tech-card:hover {
+    scale: 120%;
+}
+
+.white {
+    background-color: aliceblue;
+}
+
+
+@media(max-width: 640px){
+    .tech-container {
+        grid-template-columns: repeat(auto-fill, 80px);
+        justify-items: center;
+    }
+    .tech-card{
+        width: 40px;
+    }
+    .tech-card img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .tech-card p{
+        font-size: small;
+    }
+}

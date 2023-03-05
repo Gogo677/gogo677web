@@ -3,6 +3,9 @@
 @import "./wraper.css";
 @import "./menu.css";
 @import "./hero.css";
+@import "./projects.css";
+@import "./contact.css";
+@import "./tech.css";
 
 .paleta{
     color:#0E1E47;
@@ -29,6 +32,7 @@
     --green: #42E2B8;
     --yellow: #E6BE5E;
     --clearblue: #82A5FF;
+    --blue:rgb(1, 1, 56);
     --white: rgba(255, 255, 255, 0.932);
 }
 
@@ -44,5 +48,13 @@ body {
     padding-block: 24px;
     display: flex;
     gap: 16px;
+}
+
+.container {
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+    padding: 0 20px 20px 20px;
+    margin-top: 28px ;
+    background-color: var(--blue);
 }
 

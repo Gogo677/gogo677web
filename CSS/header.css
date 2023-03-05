@@ -18,6 +18,12 @@
     margin: 0;
 }
 
+.nombre h1 {
+    padding: 0;
+    margin: 0;
+    font-size:  bold 95px/153.71px;
+}
+
 .nombre p {
     padding: 0;
     margin: 0;
