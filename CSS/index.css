@@ -28,6 +28,7 @@
     --caption:  12px/19px var(--fontBase) ;
     --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%) , linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
     --gradient2: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,102,1) 100%);
+    --gogoBlackBlue: rgb(2,0,36);
     --purple: #310A90;
     --green: #42E2B8;
     --yellow: #E6BE5E;
@@ -37,7 +38,7 @@
 }
 
 body {
-    background: var(--gradient2);
+    background: var(--gogoBlackBlue);
     min-block-size: 100vh;
     font: var(--body1);
     color: var(--yellow);

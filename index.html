@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Jiménez - web</title>
+    <title>Diego Jimenez Gonzalez - web</title>
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="/icons/favicon.svg">
 </head>
 <body>
     <!--Cabecera navegacion-->
@@ -16,7 +16,7 @@
         <div class="wrapper">
             <div class="header-content">
                 <div class="nombre">
-                    <h2>Diego Jiménez González</h2>
+                    <h1>Diego Jimenez Gonzalez</h1>
                     <p><small>Software developer</small></p>
                 </div>
                 <nav class="menu" aria-label="main-navigation">
@@ -38,7 +38,7 @@
     <div class="wrapper">
         <section aria-label="main" class="hero" id="main">
             <div class="hero-image">
-                <img src="./img/diego20234x4.png" width="328" height="330" alt="Foto de Diego Jiménez">
+                <img src="./img/diego_web_IMG.jpg" width="328" height="330" alt="Fotografía de Diego Jimenez Gonzalez">
             </div>
             <div class="hero-description">
                 <h2>
@@ -59,62 +59,9 @@
                 </div>
             </div>
         </section>
-
-        <!--<div class="working-area" style="text-align: center;">
-            <h2 style="font: var(--headline3);">Página en desarrollo!</h2>
-            <img src="./img/trabajando.png" alt="" height="300">        
-        </div>-->
-
         <div class="container">
             <h3>Tecnologias</h3>
-            <div class="tech-container">
-                <div class="tech-card">
-                    <img src="./tech-icons/python.svg" alt="">
-                    <p>Python</p>
-                </div>
-                <div class="tech-card">
-                    <img src="./tech-icons/flask-png.png" alt="">
-                    <p>Flask</p>
-                </div>
-                <div class="tech-card">
-                    <img src="./tech-icons/django-icon.svg" alt="">
-                    <p>Django</p>
-                </div>
-                <div class="tech-card">
-                    <img src="./tech-icons/html.svg" alt="">
-                    <p>HTML</p>
-                </div>
-                <div class="tech-card">
-                    <img src="./tech-icons/css.svg" alt="">
-                    <p>CSS</p>
-                </div>
-                <div class="tech-card">
-                    <img src="./tech-icons/Javascript.svg" alt="">
-                    <p>JavaScript</p>
-                </div>
-                <!--
-                <div class="tech-card">
-                    <img src="./tech-icons/react.svg" alt="">
-                    <p>React</p>
-                </div>
-                <div class="tech-card">
-                    <img src="./tech-icons/nodejs-square.svg" alt="">
-                    <p>Nodejs</p>
-                </div> 
-                -->
-                <div class="tech-card">
-                    <img src="./tech-icons/sql.svg" alt="">
-                    <p>SQL</p>
-                </div>
-                <div class="tech-card">
-                    <img src="./tech-icons/git.svg" alt="">
-                    <p>Git</p>
-                </div>
-                <div class="tech-card">
-                    <img src="./tech-icons/java.svg" alt="">
-                    <p>Java</p>
-                </div>
-            </div>
+            <div class="tech-container" id="#tech-container"></div>
         </div>
 
         <div class="projects-container container" id="projects">
@@ -232,5 +179,6 @@
             $mailto.click();
         }
     </script>
+    <script src="JS/data.js"></script>
 </body>
 </html>
