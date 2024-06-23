@@ -14,7 +14,7 @@ technologies =
         name:"Java"
     },
     {
-        img:"./tech-icons/Python.svg",
+        img:"./tech-icons/python.svg",
         name:"Python"
     },
     {
