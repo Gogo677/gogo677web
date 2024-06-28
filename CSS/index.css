@@ -60,3 +60,13 @@ body {
     background-color: var(--blue);
 }
 
+.tooltip {
+    display: none;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+    padding: 2px;
+    margin: 0 ;
+    background-color: var(--blue);
+    text-align: center;
+}
+

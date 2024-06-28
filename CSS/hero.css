@@ -5,6 +5,9 @@
 .hero-image {
     text-align: center;
 }
+.hero-image:hover .tooltip {
+    display: block;
+}
 
 .hero-image img {
     max-inline-size: 100%;
@@ -52,8 +55,22 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .hero {
+        margin-bottom: 50px;
+    }
+
     .hero-image img {
         inline-size: 500px;
         block-size: 504px;
+    }
+
+    .hero-image figure {
+        block-size: 500px;
+        margin: 0;
+    }
+
+    .hero-image span {
+        width: 500px;
+        margin-left: auto;
     }
 }
