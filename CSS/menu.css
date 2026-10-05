@@ -1,26 +1,36 @@
 .menu {
-    display: none;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .menu ul {
     display: flex;
+    gap: 20px;
     list-style: none;
-    gap:40px;
+    margin: 0;
+    padding: 0;
 }
 
-.menu ul a {
+.menu a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    color: var(--text);
     text-decoration: none;
-    color: var(--white);
-    font: var(--button);
-    text-transform: uppercase;
 }
 
-.menu ul a:hover {
-    color: var(--yellow);
+@media (max-width: 640px) {
+    .brand {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 768px) {
-    .menu{
-        display: block;
+@media (min-width: 768px) {
+    .menu ul {
+        gap: 28px;
     }
 }

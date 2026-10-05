@@ -1,6 +1,11 @@
 .wrapper {
-    max-inline-size: 1158px;
-    padding-inline-end: 16px;
-    padding-inline-start: 16px;
-    margin: auto;
+    max-inline-size: 1040px;
+    padding-inline: 16px;
+    margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        padding-inline: 32px;
+    }
 }

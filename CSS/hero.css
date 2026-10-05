@@ -1,76 +1,73 @@
 .hero {
-    padding-block-start: 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+    padding-block: 48px 64px;
 }
 
-.hero-image {
-    text-align: center;
-}
-.hero-image:hover .tooltip {
-    display: block;
-}
-
-.hero-image img {
-    max-inline-size: 100%;
-    block-size: auto;
-    border-radius: 30px;
+.eyebrow {
+    font: 500 0.85rem/1.4 var(--font-mono);
+    color: var(--accent);
+    margin: 0 0 12px;
 }
 
-.hero h2 {
-    font: var(--headline3);
+.hero h1 {
+    font-size: clamp(2.25rem, 6vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.lead {
+    font-size: 1.125rem;
+    color: var(--muted);
+    max-inline-size: 60ch;
+    margin: 20px 0 8px;
+}
+
+.lead strong {
+    color: var(--text);
+}
+
+.hero-meta {
+    font-size: 0.9rem;
+    color: var(--muted);
     margin: 0;
 }
 
-.hero h2 span:nth-of-type(1) {
-    font: var(--headline5);
-    display: block;
-}
-
-.hero-description {
+.hero-actions {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
 }
 
-.hero-social {
-    padding-block: 24px;
+.social {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+    font-weight: 500;
 }
 
-@media screen and (min-width: 768px) {
+.hero-image img {
+    inline-size: 160px;
+    block-size: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
     .hero {
-        display: flex;
-        gap:32px;
-        /* border: 1px solid red; */
-    }
-    .hero-image{
-        order:2;
-        text-align: end;
-        flex:1;
-    }
-    
-    .hero-description{
-        order: 1;
-        max-inline-size: 450px;
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-    .hero {
-        margin-bottom: 50px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 88px 96px;
     }
 
     .hero-image img {
-        inline-size: 500px;
-        block-size: 504px;
-    }
-
-    .hero-image figure {
-        block-size: 500px;
-        margin: 0;
-    }
-
-    .hero-image span {
-        width: 500px;
-        margin-left: auto;
+        inline-size: 260px;
+        block-size: 260px;
     }
 }

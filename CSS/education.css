@@ -1,0 +1,39 @@
+.education-grid {
+    display: grid;
+    gap: 32px 48px;
+}
+
+.education-grid .subsection-title {
+    margin-top: 0;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.education-list li:first-child {
+    padding-top: 0;
+}
+
+.education-list strong {
+    display: block;
+    font-weight: 600;
+}
+
+.education-list span {
+    font-size: 0.875rem;
+    color: var(--muted);
+}
+
+@media (min-width: 768px) {
+    .education-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

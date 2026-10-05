@@ -1,43 +1,10 @@
-.contact-form{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.contact p {
+    color: var(--muted);
+    margin: 0 0 12px;
 }
 
-.contact-form label{
-    display: block;
-    text-align: left;
-}
-
-.contact-form .input{
-    width: 85%;
-    border: 2px solid var(--yellow);
-    height: 24px;
-    border-radius: 8px;
-    font: var(--body1);
-}
-
-.contact-form .form-info{
-    display: flex;
-    width: 100%;
-}
-
-
-.form-item{
-    width: 100%;
-    padding: 8px 0 8px 0;
-}
-
-.contact-form .description{
-    height: 200px;
-}
-
-@media(max-width: 640px){
-    .contact-form .form-info{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-    }
+.contact-email {
+    font-size: clamp(1.25rem, 5vw, 2rem);
+    font-weight: 600;
+    overflow-wrap: anywhere;
 }

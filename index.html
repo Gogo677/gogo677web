@@ -1,189 +1,242 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Jimenez Gonzalez - web</title>
-    <link rel="stylesheet" href="./CSS/index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Diego Jiménez González · .NET Software Engineer</title>
+    <meta name="description" content="Diego Jiménez González, backend / full-stack Software Engineer specializing in .NET and C#. Experience in enterprise systems, legacy modernization and solution architecture.">
+    <link rel="canonical" href="https://www.diegogojimenez.com/">
+    <link rel="alternate" hreflang="en" href="https://www.diegogojimenez.com/">
+    <link rel="alternate" hreflang="es" href="https://www.diegogojimenez.com/es/">
+    <link rel="alternate" hreflang="x-default" href="https://www.diegogojimenez.com/">
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_MX">
+    <meta property="og:title" content="Diego Jiménez González · .NET Software Engineer">
+    <meta property="og:description" content="Backend / full-stack engineer specializing in .NET and C#.">
+    <meta property="og:url" content="https://www.diegogojimenez.com/">
+    <meta property="og:image" content="https://www.diegogojimenez.com/img/diego_web_IMG.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="color-scheme" content="light dark">
     <link rel="icon" href="/icons/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Diego Jiménez González",
+        "jobTitle": "Software Engineer II",
+        "description": "Backend / full-stack software engineer specializing in .NET and C#.",
+        "url": "https://www.diegogojimenez.com/",
+        "image": "https://www.diegogojimenez.com/img/diego_web_IMG.jpg",
+        "email": "mailto:diegogo_go@hotmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Naucalpan de Juárez", "addressCountry": "MX" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad Nacional Autónoma de México" },
+        "knowsAbout": ["C#", ".NET", "ASP.NET MVC", "REST APIs", "Software architecture", "SOLID principles", "Unit testing", "SQL"],
+        "knowsLanguage": ["es", "en"],
+        "sameAs": ["https://www.linkedin.com/in/gogo677/", "https://github.com/Gogo677"]
+    }
+    </script>
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div class="header-content">
-                <div class="nombre">
-                    <h1>Diego Jimenez Gonzalez</h1>
-                    <p><small>Software developer</small></p>
-                </div>
-                <nav class="menu" aria-label="main-navigation">
-                    <ul>
-                        <li>
-                            <a class="is-active" href="#main">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#projects">Proyectos</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="wrapper header-content">
+            <a class="brand" href="#home">Diego Jiménez</a>
+            <nav class="menu" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="lang-switch" href="/es/" hreflang="es" lang="es" aria-label="Ver en español">ES</a>
         </div>
     </header>
-    <div class="wrapper">
-        <section aria-label="main" class="hero" id="main">
-            <div class="hero-image">
-                <figure>
-                    <img src="./img/diego_web_IMG.jpg" width="328" height="330" alt="Fotografía de Diego Jimenez Gonzalez">
-                    <span class="tooltip">Fotografía de Diego Jimenez Gonzalez</span>
-                </figure>
-            </div>
+
+    <main class="wrapper">
+        <section class="hero" id="home" aria-label="Introduction">
             <div class="hero-description">
-                <h2>
-                    <span>Hola a todos!</span>
-                    <span>Soy Diego</span>
-                </h2>
-                <p>
-                    Software developer apasionado por la tecnología buscando siempre mejorar sus habilidades
-                    y aprendiendo nuevas con el fin de implementar las mejores soluciones a los problemas presentados.
+                <p class="eyebrow">Software Engineer II · Backend / Full-stack</p>
+                <h1>Diego Jiménez González</h1>
+                <p class="lead">
+                    Software engineer specializing in <strong>.NET and C#</strong>. I build and modernize
+                    enterprise systems, design REST APIs and scalable architectures, and own features
+                    end to end.
                 </p>
-                <p>
-                    Mi principal area de interes es el desarrollo de aplicaciones utilizando .NET + React
-                </p>
-                <div class="social">
-                    <a class="button-icon" href="mailto:diegogo_go@hotmail.com"><img src="./icons/icon-important_mail.png"></a>
-                    <a target="_blank" class="button-icon" href="https://www.linkedin.com/in/gogo677/"><img src="./icons/icon-Linkedin24x24purple.png"></a>
-                    <a target="_blank" class="button-icon" href="https://github.com/Gogo677"><img src="./icons/icon-github.png"></a>
+                <p class="hero-meta">B.S. in Applied Mathematics and Computer Science (UNAM) · Mexico City area · Spanish &amp; English</p>
+                <div class="hero-actions">
+                    <a class="button" href="#experience">View experience</a>
+                    <a class="button is-secondary" href="#contact">Contact</a>
+                </div>
+                <ul class="social" aria-label="Profiles">
+                    <li><a href="https://www.linkedin.com/in/gogo677/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                    <li><a href="https://github.com/Gogo677" target="_blank" rel="noopener">GitHub ↗</a></li>
+                </ul>
+            </div>
+            <div class="hero-image">
+                <img src="/img/diego_web_IMG.jpg" width="328" height="330" alt="Photo of Diego Jiménez González">
+            </div>
+        </section>
+
+        <section class="section" id="experience" aria-labelledby="experience-title">
+            <h2 class="section-title" id="experience-title">Experience</h2>
+            <ol class="timeline">
+                <li class="job">
+                    <div class="job-header">
+                        <h3>Software Engineer II <span class="job-company">· McDonald's</span></h3>
+                        <p class="job-date">Jul 2025 – Present · Mexico City</p>
+                    </div>
+                    <ul class="job-points">
+                        <li>Backend engineer working on enterprise systems that support global restaurant operations.</li>
+                        <li>Modernizing and refactoring large legacy codebases using .NET and C#.</li>
+                        <li>End-to-end ownership of features in an agile Scrum environment.</li>
+                    </ul>
+                    <ul class="tags"><li>C#</li><li>.NET</li><li>Scrum</li></ul>
+                </li>
+                <li class="job">
+                    <div class="job-header">
+                        <h3>Software Engineer II <span class="job-company">· Solera Holdings</span></h3>
+                        <p class="job-date">Apr 2023 – Jul 2025 · Mexico City</p>
+                    </div>
+                    <p class="job-roles">Software Engineer II (Jun 2025 – Jul 2025) · Software Development Engineer (Apr 2023 – Jun 2025)</p>
+                    <ul class="job-points">
+                        <li>Developed web apps (MVC and WebForms), desktop apps and backend services (RESTful APIs with .NET and C#).</li>
+                        <li>Designed scalable architectures.</li>
+                        <li>Led and contributed to migration projects to modern technologies, reducing deployment issues and improving development workflow efficiency for a team of 10 developers.</li>
+                    </ul>
+                    <ul class="tags"><li>C#</li><li>.NET</li><li>ASP.NET MVC</li><li>WebForms</li><li>REST APIs</li></ul>
+                </li>
+                <li class="job">
+                    <div class="job-header">
+                        <h3>Jr Consultant <span class="job-company">· ENKI</span></h3>
+                        <p class="job-date">Jul 2022 – Apr 2023 · Mexico City</p>
+                    </div>
+                    <ul class="job-points">
+                        <li>Analyzed, gathered and negotiated requirements with clients to define solutions on the Microsoft Power Platform.</li>
+                        <li>Designed and developed solution architectures for a variety of data sources, data pipelines and web/mobile applications.</li>
+                    </ul>
+                    <ul class="tags"><li>Power Platform</li><li>Data pipelines</li></ul>
+                </li>
+                <li class="job">
+                    <div class="job-header">
+                        <h3>Social Service <span class="job-company">· FES Acatlán</span></h3>
+                        <p class="job-date">Jan 2022 – Jul 2022 · Naucalpan, Mexico</p>
+                    </div>
+                    <ul class="job-points">
+                        <li>Collaborated on projects for the Promotion and Outreach Department of the Continuing Education Center.</li>
+                        <li>Designed email templates with HTML and CSS, and wrote Google Apps Script automations for email sending.</li>
+                    </ul>
+                    <ul class="tags"><li>HTML</li><li>CSS</li><li>Google Apps Script</li></ul>
+                </li>
+            </ol>
+        </section>
+
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <h2 class="section-title" id="skills-title">Skills</h2>
+            <div class="skill-groups">
+                <div class="skill-group">
+                    <h3>Backend</h3>
+                    <ul class="tags"><li>C#</li><li>.NET</li><li>ASP.NET MVC</li><li>WebForms</li><li>REST APIs</li><li>Python</li><li>Flask</li><li>Node.js</li><li>Java</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <ul class="tags"><li>JavaScript</li><li>React</li><li>HTML</li><li>CSS</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Data</h3>
+                    <ul class="tags"><li>SQL</li><li>Pandas</li><li>NumPy</li><li>Power Platform</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Practices &amp; tools</h3>
+                    <ul class="tags"><li>SOLID principles</li><li>Solution architecture</li><li>Unit testing</li><li>Scrum</li><li>Git</li></ul>
                 </div>
             </div>
         </section>
-        <div class="container">
-            <h3>Tecnologías</h3>
-            <div class="tech-container" id="#tech-container"></div>
-        </div>
 
-        <div class="projects-container container" id="projects">
-            <h3>Proyectos</h3>
-            <div class="projects-cards-container">
-                <div class="project-card">
-                    <img src="./proj-images/ED.jpg" alt="">
-                    <span class="project-name">Proyecto Estructuras de datos</span>
-                    <div class="project-info">
-                        <span>Proyecto escolar</span>      
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <h2 class="section-title" id="projects-title">Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="/tech-icons/flask-png.png" alt="Flask logo" loading="lazy">
+                    <div class="project-body">
+                        <p class="project-type">Personal project</p>
+                        <h3>Restaurant directory API</h3>
+                        <ul class="tags"><li>Python</li><li>Flask</li><li>REST API</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Gogo677/apirest_restaurantdirectory" target="_blank" rel="noopener">Code ↗</a>
+                        </div>
                     </div>
-                    <a href="https://github.com/Gogo677/Proyecto-E.D" class="button is-secondary" target="_blank">Código en Github</a>
-                </div>
-                <div class="project-card">
-                    <img src="./proj-images/Metodos-numericos2.png" alt="">
-                    <span class="project-name">Proyecto métodos numéricos 2</span>
-                    <div class="project-info">
-                        <span>Proyecto escolar</span>
+                </article>
+                <article class="project-card">
+                    <img src="/proj-images/Video-player.png" alt="Screenshot of the video player" loading="lazy">
+                    <div class="project-body">
+                        <p class="project-type">Personal project</p>
+                        <h3>Video player</h3>
+                        <ul class="tags"><li>JavaScript</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Gogo677/video-player" target="_blank" rel="noopener">Code ↗</a>
+                            <a href="https://gogo677.github.io/video-player/" target="_blank" rel="noopener">Demo ↗</a>
+                        </div>
                     </div>
-                    <a href="https://github.com/Gogo677/metodosnumericos2" class="button is-secondary" target="_blank">Código en Github</a>
-                </div>
-                <div class="project-card">
-                    <img src="./proj-images/pronosticos.png" alt="">
-                    <span class="project-name">Proyecto pronósticos</span>
-                    <div class="project-info">
-                        <span>Proyecto escolar</span>
-                    </div>
-                    <a href="https://github.com/Gogo677/proyectopronosticos" class="button is-secondary" target="_blank">Código en Github</a>
-                </div>
-                <div class="project-card">
-                    <img src="./proj-images/simplex.png" alt="">
-                    <span class="project-name">Método Simplex</span>
-                    <div class="project-info">
-                        <span>Proyecto escolar</span>
-                    </div>
-                    <a href="https://github.com/Gogo677/metodosimplex" class="button is-secondary" target="_blank">Código en Github</a>
-                </div>
-                <div class="project-card">
-                    <img src="./proj-images/tienda-gatito.png" alt="">
-                    <span class="project-name">Tienda Gatito</span>
-                    <div class="project-info">
-                        <span>Proyecto escolar</span>
-                    </div>
-                    <a href="https://github.com/Gogo677/Proyecto-Ingenier-a-del-software" class="button is-secondary" target="_blank">Código en Github</a>
-                </div>
-                <div class="project-card">
-                    <img src="./proj-images/tutorialPoo.png" alt="">
-                    <span class="project-name">Tutorial de POO</span>
-                    <div class="project-info">
-                        <span>Proyecto escolar</span>
-                    </div>
-                    <a href="https://github.com/Gogo677/Proyecto-POO" class="button is-secondary" target="_blank">Código en Github</a>
-                </div>
-                <div class="project-card">
-                    <img src="./tech-icons/flask-png.png" alt="">
-                    <span class="project-name">API restaurantes con Flask</span>
-                    <div class="project-info">
-                        <span>Proyecto personal</span>
-                    </div>
-                    <a href="https://github.com/Gogo677/apirest_restaurantdirectory" class="button is-secondary" target="_blank">Código en Github</a>
-                </div>
-                <div class="project-card">
-                    <img src="./proj-images/Video-player.png" alt="">
-                    <span class="project-name">Video player</span>
-                    <div class="project-info">
-                        <span>Proyecto personal</span>
-                    </div>
-                    <a href="https://github.com/Gogo677/video-player" class="button is-secondary" target="_blank">Código en Github</a>
-                    <a href="https://gogo677.github.io/video-player/" class="button is-secondary" target="_blank" >Pruebalo</a>
-                </div>
-                
+                </article>
             </div>
 
+            <h3 class="subsection-title">Academic projects <span lang="es">(in Spanish)</span></h3>
+            <ul class="academic-list">
+                <li><a href="https://github.com/Gogo677/metodosimplex" target="_blank" rel="noopener">Simplex method ↗</a></li>
+                <li><a href="https://github.com/Gogo677/metodosnumericos2" target="_blank" rel="noopener">Numerical methods 2 ↗</a></li>
+                <li><a href="https://github.com/Gogo677/proyectopronosticos" target="_blank" rel="noopener">Forecasting ↗</a></li>
+                <li><a href="https://github.com/Gogo677/Proyecto-E.D" target="_blank" rel="noopener">Data structures ↗</a></li>
+                <li><a href="https://github.com/Gogo677/Proyecto-Ingenier-a-del-software" target="_blank" rel="noopener">Tienda Gatito (Software engineering) ↗</a></li>
+                <li><a href="https://github.com/Gogo677/Proyecto-POO" target="_blank" rel="noopener">OOP tutorial ↗</a></li>
+            </ul>
+        </section>
+
+        <section class="section" id="education" aria-labelledby="education-title">
+            <h2 class="section-title" id="education-title">Education</h2>
+            <div class="education-grid">
+                <div>
+                    <h3 class="subsection-title">Degree</h3>
+                    <ul class="education-list">
+                        <li>
+                            <strong>Applied Mathematics and Computer Science</strong>
+                            <span>FES Acatlán, National Autonomous University of Mexico (UNAM) · 2018 – 2022</span>
+                        </li>
+                        <li>
+                            <strong>Computational Mathematics</strong>
+                            <span>National Autonomous University of Mexico (UNAM) · 2015 – 2018</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="subsection-title">Certifications</h3>
+                    <ul class="education-list">
+                        <li><strong>Scrum Fundamentals Certified</strong></li>
+                        <li><strong>SOLID Principles: Introducing Software Architecture &amp; Design</strong></li>
+                        <li><strong lang="es">Master en Python: Python 3, Django, Flask y Tkinter</strong></li>
+                        <li><strong lang="es">Curso de Frontend Developer</strong></li>
+                        <li><strong lang="es">Manipulación y transformación de datos con Pandas y NumPy</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <h2 class="section-title" id="contact-title">Contact</h2>
+            <p>Have an opportunity or a project in mind? Email me:</p>
+            <a class="contact-email" href="mailto:diegogo_go@hotmail.com">diegogo_go@hotmail.com</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <p>© 2026 Diego Jiménez González</p>
         </div>
-
-        <div class="contact-container container" id="contact">
-            <h3>Contacto</h3>
-            <p>Comunicate conmigo</p>
-            <form action="" class ="contact-form" id="form">
-                <div class="form-info">
-                    <div class="form-item">
-                        <label for="nombre">Nombre </label>
-                        <input type="text" class="input" id="nombre" name="nombre" placeholder="Nombre">
-                    </div>
-                    <div class="form-item">
-                        <label for="correo">Correo</label>
-                        <input type="email" class="input" name="correo" id="correo" placeholder="ejemplo@gmail.com">
-                    </div>
-                </div>
-                <div class="form-item">
-                    <label for="asunto">Asunto</label>
-                    <input  class="input" type="text" name ="asunto" id="asunto" placeholder="Me gustaría contactarte">
-                </div>
-                <div class="form-item">
-                    <label for="descripcion">Descripción</label>
-                    <textarea class="input description" name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción"></textarea>
-                </div>
-                <input class="button" type="submit" value="Enviar">
-            </form>
-            <a href="" id="mailto"></a>
-        </div>
-
-        <footer>
-            <p>Hecho con ❤️ por Diego Jiménez González (Gogo677)</p>
-        </footer>
-    </div>
-
-    <script>
-        const $form = document.querySelector('#form');
-        const $mailto = document.querySelector('#mailto');
-
-        $form.addEventListener('submit',handleSubmit);
-
-        function handleSubmit(event){
-            event.preventDefault();
-            const form = new FormData(this);
-            $mailto.setAttribute('href',`mailto:diegogo_go@hotmail.com?subject=${form.get('nombre')} - ${form.get('asunto')}&body=${form.get('descripcion')}`);
-            $mailto.click();
-        }
-    </script>
-    <script src="JS/data.js"></script>
+    </footer>
 </body>
 </html>
